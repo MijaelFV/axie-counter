@@ -7,7 +7,12 @@ export function MainScreen() {
   const [round, setRound] = useState(1)
 
   return (
-    <div className="w-full h-full bg-gray-900 flex justify-center items-center">
+    <div 
+      className="w-full h-full flex justify-center items-center"
+      style={{
+        backgroundColor: "#007DC1"
+      }}
+    >
       <div className="w-80 h-80 bg-white rounded-2xl flex flex-col items-center">
         <Rounds setEnergy={setEnergy} round={round} setRound={setRound} />
         <Energys energy={energy} setEnergy={setEnergy} />
