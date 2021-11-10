@@ -18,15 +18,15 @@ function Rounds({setEnergy, round, setRound, setCard}) {
         <>
             <p className="text-gray-900 text-3xl mb-2 mt-9">Round {round}</p>
             <div className="flex">
-            <Button
-                variant="contained"
-                onClick={addRound}
-            >NEXT ROUND</Button>
-            <div className="w-1"/> 
-            <Button
-                variant="contained"
-                onClick={newGame}
-            >NEW GAME</Button>
+                <Button
+                    variant="contained"
+                    onClick={addRound}
+                >NEXT ROUND</Button>
+                <div className="w-1"/> 
+                <Button
+                    variant="contained"
+                    onClick={newGame}
+                >NEW GAME</Button>
             </div>
         </>
     )
