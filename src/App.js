@@ -1,9 +1,9 @@
 import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { esES } from '@mui/material/locale';
-import { Main } from './pages/main';
+import { MainScreen } from './pages/Main/MainScreen';
 
-export const App = () => {
+const App = () => {
     const theme = createTheme(
         {   
             palette: {
@@ -20,19 +20,22 @@ export const App = () => {
                     styleOverrides: {
                         root: {
                             ":hover": {
-                                backgroundColor: "none"
-                            },
+                                backgroundColor: "#be9770"
+                            }
                         }
                     }
                 }
-            }
+            },
+
         },
         esES
     )
 
     return (
         <ThemeProvider theme={theme}>
-            <Main />
+            <MainScreen />
         </ThemeProvider>
     )
 }
+
+export default App;
