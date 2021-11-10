@@ -21,7 +21,7 @@ function Energys({energy, setEnergy}) {
                 >ADD</Button>
                 <div className="w-1"/> 
                 <Button
-                    disabled={energy === 1}
+                    disabled={energy === 0}
                     variant="contained"
                     onClick={subEnergy}
                 >SUB</Button>
