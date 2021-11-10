@@ -3,10 +3,17 @@ import React from 'react'
 import numberSplit from '../../../helpers/numberSplit';
 
 function Rounds({setEnergy, round, setRound, setCard}) {
+
     function addRound() {
         setRound(prevState => prevState + 1)
-        setEnergy(prevState => prevState + 2)
-        setCard(prevState => prevState + 3)
+        setEnergy(prevState => {
+            const _newValue = prevState + 2;
+            return _newValue > 10 ? 10 : _newValue;
+        });
+        setCard(prevState => {
+            const _newValue = prevState + 3;
+            return _newValue > 24 ? 24 : _newValue;
+        });
     }
     
     function newGame() {
