@@ -1,15 +1,17 @@
 import { Button } from '@mui/material';
 import React from 'react'
 
-function Rounds({setEnergy, round, setRound}) {
+function Rounds({setEnergy, round, setRound, setCard}) {
     function addRound() {
         setRound(prevState => prevState + 1)
         setEnergy(prevState => prevState + 2)
+        setCard(prevState => prevState + 3)
     }
     
     function newGame() {
         setRound(1)
         setEnergy(3)
+        setCard(6)
     }
 
     return (
