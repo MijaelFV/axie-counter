@@ -13,7 +13,13 @@ function numberSplit(value, index) {
         digits[0] = 0;
     }
 
-    return digits[index]
+    console.log(digits);
+
+    if (digits.length !== 0) {
+        return digits[index]
+    } else {
+        return 0
+    }
 }
 
 export default numberSplit
