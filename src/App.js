@@ -1,11 +1,38 @@
 import React from 'react';
+import { createTheme, ThemeProvider } from '@mui/material';
+import { esES } from '@mui/material/locale';
+import { Main } from './pages/main';
 
-function App() {
-  return (
-    <div className="w-full h-full bg-white flex justify-center items-center">
-      <div className="w-80 h-80 bg-gray-500 rounded-3xl"></div>
-    </div>
-  );
+export const App = () => {
+    const theme = createTheme(
+        {   
+            palette: {
+                mode: "dark",
+                primary: {
+                    main: '#FFFFFF'
+                },
+                secondary: {
+                    main: '#0b101f'
+                },
+            },
+            components: {
+                MuiButton: {
+                    styleOverrides: {
+                        root: {
+                            ":hover": {
+                                backgroundColor: "none"
+                            },
+                        }
+                    }
+                }
+            }
+        },
+        esES
+    )
+
+    return (
+        <ThemeProvider theme={theme}>
+            <Main />
+        </ThemeProvider>
+    )
 }
-
-export default App;
