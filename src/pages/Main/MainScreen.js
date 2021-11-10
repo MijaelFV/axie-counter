@@ -5,7 +5,7 @@ import Energys from './components/Energys';
 import Rounds from './components/Rounds';
 import WoodTexture from "../../assets/wood.jpg";
 import Logo from "../../assets/logo.png";
-import { border, borderBottom } from '@mui/system';
+import Github from "../../assets/github.png"
 
 export function MainScreen() {
   const [energy, setEnergy] = useState(3)
@@ -42,6 +42,10 @@ export function MainScreen() {
         <Energys energy={energy} setEnergy={setEnergy} />
         <Cards card={card} setCard={setCard} />
       </div>
+        <div className="flex flex-col sm:flex-row relative bottom-14">
+          <img src={Github} alt="Github logo." className="h-5 w-5 relative top-1 " />
+          <a href="https://github.com/MijaelFV/axie-counter" className="pl-1"> <i className="text-lg"> Github </i></a>
+        </div>
     </div>
   );
 }
