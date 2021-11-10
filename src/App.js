@@ -9,7 +9,7 @@ const App = () => {
             palette: {
                 mode: "dark",
                 primary: {
-                    main: '#FFFFFF'
+                    main: '#be9770'
                 },
                 secondary: {
                     main: '#0b101f'
@@ -19,6 +19,7 @@ const App = () => {
                 MuiButton: {
                     styleOverrides: {
                         root: {
+                            color: 'black',
                             ":hover": {
                                 backgroundColor: "#be9770"
                             }

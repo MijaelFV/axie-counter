@@ -17,20 +17,12 @@ function Energys({energy, setEnergy}) {
             <p className="text-gray-900 text-3xl mb-2 mt-9">Energy {energy}</p>
             <div className="flex">
             <Button
-                sx={{
-                backgroundColor: "#be9770",
-                color: "black"
-                }}
                 variant="contained"
                 onClick={addEnergy}
             >ADD</Button>
             <div className="w-1"/> 
             <Button
                 disabled={energy === 1}
-                sx={{
-                backgroundColor: "#be9770",
-                color: "black"
-                }}
                 variant="contained"
                 onClick={subEnergy}
             >SUB</Button>

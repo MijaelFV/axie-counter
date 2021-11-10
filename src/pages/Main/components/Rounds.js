@@ -17,19 +17,11 @@ function Rounds({setEnergy, round, setRound}) {
             <p className="text-gray-900 text-3xl mb-2 mt-9">Round {round}</p>
             <div className="flex">
             <Button
-                sx={{
-                backgroundColor: "#be9770",
-                color: "black"
-                }}
                 variant="contained"
                 onClick={addRound}
             >NEXT ROUND</Button>
             <div className="w-1"/> 
             <Button
-                sx={{
-                backgroundColor: "#be9770",
-                color: "black"
-                }}
                 variant="contained"
                 onClick={newGame}
             >NEW GAME</Button>
