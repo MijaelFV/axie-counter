@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 html, body, #root {
-    background-color: black;
+    background: rgb(0,125,193);
+    background: linear-gradient(0deg, rgba(0,125,193,1) 50%, rgba(25,87,167,1) 100%);
     margin: 0;
     font-family: Roboto;
     width: 100%;

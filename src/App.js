@@ -7,21 +7,21 @@ const App = () => {
     const theme = createTheme(
         {   
             palette: {
-                mode: "dark",
+                mode: "light",
                 primary: {
-                    main: '#be9770'
+                    main: '#1F2937'
                 },
                 secondary: {
-                    main: '#0b101f'
+                    main: '#1F2937'
                 },
             },
             components: {
                 MuiButton: {
                     styleOverrides: {
                         root: {
-                            color: 'black',
+                            color: "white",
                             ":hover": {
-                                backgroundColor: "#be9770"
+                                backgroundColor: "black"
                             }
                         }
                     }
