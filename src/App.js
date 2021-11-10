@@ -12,7 +12,7 @@ const App = () => {
                     main: '#1F2937'
                 },
                 secondary: {
-                    main: '#1F2937'
+                    main: '#3e2807'
                 },
             },
             components: {
@@ -21,7 +21,7 @@ const App = () => {
                         root: {
                             color: "white",
                             ":hover": {
-                                backgroundColor: "black"
+                                backgroundColor: "#3e2807"
                             }
                         }
                     }

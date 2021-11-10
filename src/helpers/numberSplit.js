@@ -13,8 +13,6 @@ function numberSplit(value, index) {
         digits[0] = 0;
     }
 
-    console.log(digits);
-
     if (digits.length !== 0) {
         return digits[index]
     } else {
