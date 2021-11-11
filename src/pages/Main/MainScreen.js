@@ -42,8 +42,8 @@ export function MainScreen() {
         <Energys energy={energy} setEnergy={setEnergy} />
         <Cards card={card} setCard={setCard} />
       </div>
-        <div className="flex flex-col sm:flex-row relative bottom-14">
-          <img src={Github} alt="Github logo." className="h-5 w-5 relative top-1 " />
+        <div className="flex items-center relative bottom-16">
+          <img src={Github} alt="Github logo." className="h-5 w-5" />
           <a href="https://github.com/MijaelFV/axie-counter" className="pl-1"> <i className="text-lg"> Github </i></a>
         </div>
     </div>
