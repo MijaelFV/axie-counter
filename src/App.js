@@ -1,38 +1,42 @@
 import React from 'react';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { esES } from '@mui/material/locale';
-import { Main } from './pages/main';
+import { MainScreen } from './pages/Main/MainScreen';
 
-export const App = () => {
+const App = () => {
     const theme = createTheme(
         {   
             palette: {
-                mode: "dark",
+                mode: "light",
                 primary: {
-                    main: '#FFFFFF'
+                    main: '#1F2937'
                 },
                 secondary: {
-                    main: '#0b101f'
+                    main: '#3e2807'
                 },
             },
             components: {
                 MuiButton: {
                     styleOverrides: {
                         root: {
+                            color: "white",
                             ":hover": {
-                                backgroundColor: "none"
-                            },
+                                backgroundColor: "#3e2807"
+                            }
                         }
                     }
                 }
-            }
+            },
+
         },
         esES
     )
 
     return (
         <ThemeProvider theme={theme}>
-            <Main />
+            <MainScreen />
         </ThemeProvider>
     )
 }
+
+export default App;
