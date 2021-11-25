@@ -12,7 +12,7 @@ function Rounds({setEnergy, round, setRound, setCard}) {
         });
         setCard(prevState => {
             const _newValue = prevState + 3;
-            return _newValue > 14 ? 14 : _newValue;
+            return _newValue > 12 ? 12 : _newValue;
         });
     }
     

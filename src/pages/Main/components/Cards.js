@@ -39,7 +39,7 @@ function Cards({card, setCard}) {
                     <Button
                         fullWidth
                         color="secondary"
-                        disabled={card === 14}
+                        disabled={card === 12}
                         variant="contained"
                         onClick={addCard}
                     >ADD</Button>
